@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(106, 99, 100);
+    align-items: center;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/23/18/04/love-3102033_1280.png);
+}
+
+.description {
+    width: 1000px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgb(98, 85, 89);
+    margin-top: 10px;
+}
+
+.magic_head {
+    color: rgb(106, 99, 100);
+}
+
+.rules_and_magic {
+    display: flex;
+    flex-direction: row;
+}
+
+.rules {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgb(98, 85, 89);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.magic {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgb(98, 85, 89);
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(90, 199, 186);
+}
+
+span {
+    color: rgb(199, 90, 123);
+}

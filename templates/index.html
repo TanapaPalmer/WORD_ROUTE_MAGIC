@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Word Route Magic</title>
+</head>
+<body>
+    <div>
+        <div class="description">
+            <h1>Word Whirlwind Wonderland</h1>
+            <p class="game_details">Hop on board the Word Whirlwind Wonderland, a delightful journey of words and wonder. Whether it's a sentence, a smiley, or a secret message, this whimsical webpage brings your text to life, transforming the ordinary into a captivating visual delight.</p>
+        </div>
+        <div class="rules_and_magic">
+            <div class="rules">
+                <h1>Here's How the Magic Begins:</h1>
+                <p><strong>Magic Pop-Up Words:</strong> Imagine you have a special page that loves words! Whenever you type a word into the browser (.../any word) and press "Enter," that word magically appears right there on the page. It's like making words come alive on the screen!</p>
+                <p><strong>Hi-Five Your Name:</strong> On this amazing page, there's a secret greeting door. If you write your name after a special word "hi" in the address bar (.../hi/your name), the page throws a cheerful "Hi!" to you, and your name gets a special spot right beside it, as if the page knows you personally!</p>                
+                <p><strong>Super Repeat Magic:</strong> And guess what? You can also ask the page to do something super fun! Just type any word you want and then a number, like this: .../magic/3 (.../any word/number). When you press "Enter," that word will be repeated three times in a row, as if it's doing a word dance!</p>
+            </div>
+            <div class="magic">
+                <h1 class="magic_head">Magic Starts Here:</h1>
+
+                {% if name %}
+                    <h1>Hi, <span>{{name}}</span></h1>                    
+                {% endif %}
+
+                {% if any_word %}
+                    <h1>You typed: <span>{{any_word}}</span></h1>                    
+                {% endif %}
+
+                {% if content %}
+                    <h2>You typed: <span>{{anything}}</span></h2>
+                    <h2>and wanted to repeat this word <span>{{num}}</span> times</h2>
+                    <h1 class="magic_head">And here's the magic:</h1>
+                    <h3><span>{{content}}</span></h3>      
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
